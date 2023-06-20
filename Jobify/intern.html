@@ -1,0 +1,119 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>JOBIFY - Application Form</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <style>
+      body{
+        background: url(/images/image6.jpg);
+        background-image: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      body{
+        color: #ffffff;
+      }
+      .container {
+        border: none;
+        background: #00000059
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+  <body class="bg-light">
+  <div class="container">
+  <div class="offset-md-2 col-md-8 text-center py-5">
+    <h2>JOBIFY</h2>
+    <p class="lead">Enter your information below. This will be used to find the companies for internship. The data will be saved to Local Storage.</p>
+    <p class="lead">Have feedback? <a href="aswinarumugam210@gmail.com">Send me a message.</a></p>
+  </div>
+
+  <form class="row" method="post" autocomplete="off" name="datafetch">
+    <div class="offset-md-2 col-md-8 offset-md-2 order-md-1">
+      <h4 class="mb-3">Personal Information</h4>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstname">First name</label>
+            <input type="text" class="form-control" name="firstname" placeholder="First Name" value="" required="">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastname">Last name</label>
+            <input type="text" class="form-control" name="lastname" placeholder="Second Name" value="" required="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Your email" required="">
+          </div>
+
+          <div class="col-md-12 mb-3">
+          <label for="phone">Your Phone Number</label>
+          <input type="number" class="form-control" name="phone" placeholder="Your Phone number" required="">
+        </div></div>
+       
+
+      
+        <hr class="mb-4">
+
+        <h4 class="mb-3">Social Links</h4>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="linkedin">LinkedIn URL</label>
+            <input type="text" class="form-control" name="linkedin" placeholder="Your linkedin account" required="">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="github">Github URL</label>
+            <input type="text" class="form-control" name="github" placeholder="Your github account" required="">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="portfolio">Portfolio Website</label>
+            <input type="text" class="form-control" name="portfolio" placeholder="Your Portfolio Website" required="">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="resume">Resume</label>
+            <input type="file" name="resume">
+          </div>
+         
+        </div>
+        <hr class="mb-4">
+        <a href="thanks.html"><input type="submit" class="btn btn-primary btn-lg btn-block" name=""></a>
+    </div>
+  </form>
+  <script> const scriptURL = 'https://script.google.com/macros/s/AKfycbzgNuU_JrdABY-pCxnbqFZ6Cj3i6DI-NtemvcpoOj5jV8aUL3xkEgQuXAHlqF8rZesdxA/exec'
+   const form = document.forms['datafetch'] 
+   
+   form.addEventListener('submit', e => {
+     e.preventDefault() 
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)}) 
+     .then(response => location.href="thanks.html") 
+     .catch(error => console.error('Error!', error.message)) 
+     }) 
+     </script>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Job Suggestion Tool</title>
+ <link rel="stylesheet" href="css floder/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formbox">
+            <h1>Job Suggestion Tool</h1>
+            <p>Select your skills:</p>
+            <form id="skills-form" >
+                <label>
+                    <input type="checkbox" name="skills" value="programming">
+                    Programming
+                </label><br>
+                <label>
+                    <input type="checkbox" name="skills" value="design">
+                    Design
+                </label><br>
+                <label>
+                    <input type="checkbox" name="skills" value="marketing">
+                    Marketing
+                </label><br>
+                <label>
+                    <input type="checkbox" name="skills" value="business">
+                    Business
+                </label><br><br>
+                <a href="#job-roles"><button type="button" onclick="suggestJobs()">Suggest Jobs</button></a>
+            </form>
+        </div>
+<div class="details">
+    <div id="job-roles"></div>
+    <div id="companies"></div>
+</div>
+</div>
+ 
+ <script src="/java script/script.js"></script>
+</body>
+</html>

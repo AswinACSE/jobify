@@ -1,0 +1,45 @@
+body {
+    display: block;
+    margin: 146px;
+    margin-top: 0px;
+    font-family: math;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.container{
+    background-color: #a1a4a7;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: -10px;
+    margin-right: 45px;
+    text-align: center;
+  }
+.des-box{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.heading{
+    font-size: 50px;
+    position: relative;
+    top: 28px;
+}
+.lead{
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.information-box{
+    margin-left: 160px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

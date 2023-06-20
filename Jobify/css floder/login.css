@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("/images/second\ page.jpg");
+    background-image: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.box{
+    position: absolute;
+    background-attachment: fixed;
+    width: 721px;
+    height: 920px;
+    left: 0px;
+    top: 0px;
+}
+.box{
+    
+    display: block;
+    border: none;
+    justify-content: center;
+    background: linear-gradient(90.23deg, rgba(0, 0, 0, 0.6) 0.19%, rgba(0, 0, 0, 0) 102.56%);
+    border-radius: none;
+}
+.logo{
+    margin: 10px;
+    padding: 10px;   
+}
+.form{
+    border: none;
+    height: 711px;
+    margin-top: -31px;
+}
+h1{
+    color: white;
+    padding: 60px 30px 30px 30px ;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size:50px;
+    font-style: normal;
+    font-weight: 500;
+}
+.input-data{
+    width: 521px;
+    height: 80px;
+    border: 4px solid rgb(173 173 173);
+    border-radius: 38px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.input-data::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    padding-left: 30px;
+}
+.button{
+    width: 521px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 38px;
+    margin-top: 36px;
+    margin-left: 90px;
+    background-color: #757d97;
+    border: none;
+}
+.input-data{
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    font-size: 25px;
+}
+#errorBox {
+    text-align: center;
+    font-size: 30px;
+    color: #a80303;
+    margin-top: 41px;
+}
+h3{
+    font-size: 29px;
+    line-height: 117px;
+    margin-left: 186px;
+    color: white;
+}
+a{
+    font-size: 26px;
+    line-height: 117px;
+    margin-left: 9px;
+    color: #e54662;
+}
+a:hover{
+    color:#ff59b5 ;
+}
+footer{
+    margin-top: 873px;
+    margin-right: 25px;
+}
+@media only screen and (max-width:600px){
+    body{
+       background-image: url(/images/background.png);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+    }
+    .box{
+        position: absolute;
+        width: 431px;
+        height: 600px;
+    }
+    .logo {
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+    }
+    .form {
+        border: none;
+        height: 200px;
+        margin-top: 12px;
+    }
+    .h1 {
+        color: white;
+        padding: 60px 30px 30px 30px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .input-data {
+        width: 224px;
+        height: 39px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 38px;
+        margin-top: 13px;
+        margin-left: 87px;
+    }
+    .input-data {
+        background-color: transparent;
+        color: white;
+        padding-left: 51px;
+        font-size: 21px;
+    }
+    .button {
+        width: 279px;
+        height: 41px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 38px;
+        margin-top: 37px;
+        margin-left: 81px;
+        background-color: #FFCD2D;
+        border: none;
+    }
+    .footer {
+        margin-top: 570px;
+        margin-right: -42px;
+    }
+}

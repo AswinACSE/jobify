@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/images/inoffice.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+.first-box{
+    margin: 0px;
+    padding: 25px 96px 96px 0px;
+    text-align: center;
+    /* background: url(/images/img7.jpg); */
+    background-color: #000000b0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1300px 600px;
+}
+.heading {
+    font-size: 64px;
+    color: white;
+    position: relative;
+    top: 83px;
+}
+.inner{
+    background-color: #000000c7;
+    border-radius: 25px;
+    margin: 0px 20px;
+    height: 314px;
+}
+.second-box{
+    margin: 0px;
+    margin-top: 5px;
+    color: #d909ff;
+    background-color: #000000b0;
+}
+.title-1{
+    margin: -5px;
+    padding: 21px;
+    font-size: 45px;
+}
+.companies{
+    margin: 24px;
+    font-size: 34px;
+}
+ol li a{
+    text-decoration: none;
+    color:#2196F3;
+}
+.company-name{
+    margin: 28px;
+    margin-top: 95px;
+    padding: 32px;
+    background-color: #f94acbba;
+    border-radius: 20px;
+}
+.company-content{
+    margin: 13px;
+    padding: 20px;
+    margin-top: -26px;
+    color: white;
+}
+.company-content a{
+    font-size: 25px;
+}

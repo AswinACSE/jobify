@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/images/image8.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* .container{
+ margin:10px
+
+} */
+.formbox{
+    background-color: #000000cc;
+    color: white;
+    margin: 200px;
+    margin-bottom: 0px;
+    padding: 26px;
+    border-radius: 25px;
+}
+.container {
+    position: relative;
+    top: 50px;
+}
+.formbox{
+    margin-top: 50px;
+}
+.formbox div{
+    position: absolute;
+    background: #00000066;
+    padding: 58px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+ h1{
+    margin-left: 210px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+p{
+    margin-left: 280px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+#skills-form{
+    margin-left: 300px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+button{
+    background-color: rgb(109, 109, 218);
+    font-size: 20px;
+    border: 50px;
+}
+.details{
+    color: #fff;
+    margin-right: 800px;
+    background-color: #00000066;
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    left: 400px;
+}

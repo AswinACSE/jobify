@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume Analyzer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.min.js"></script>
+    <script src="resume-analyzer.js"></script>
+  </head>
+  <body>
+    <h1>Resume Analyzer</h1>
+    <input type="file" id="resumeInput" />
+    <button id="analyzeButton">Analyze</button>
+    <ul id="skillsList"></ul>
+    <script>
+      // add event listener to analyze button
+      document.getElementById("analyzeButton").addEventListener("click", () => {
+        // get selected resume file
+        const resumeFile = document.getElementById("resumeInput").files[0];
+        if (!resumeFile) {
+          alert("Please select a resume file.");
+          return;
+        }
+
+        // load PDF file
+        pdfjsLib.getDocument(URL.createObjectURL(resumeFile)).promise.then((pdf) => {
+          // extract text from all pages
+          let resumeText = "";
+          for (let i = 1; i <= pdf.numPages; i++) {
+            pdf.getPage(i).then((page) => {
+              page.getTextContent().then((content) => {
+                for (let j = 0; j < content.items.length; j++) {
+                  resumeText += content.items[j].str;
+                }
+              });
+            });
+          }
+
+          // wait for all text to be extracted before analyzing
+          setTimeout(() => {
+            // tokenize resume text
+            const tokens = resumeText.toLowerCase().split(/\W+/);
+
+            // remove stop words
+            const stopWords = new Set(["i", "have", "in", "and", "also", "with", "such", "as", "the"]);
+            const filteredTokens = tokens.filter(token => !stopWords.has(token));
+
+            // extract skills
+            const skills = [];
+            for (let i = 0; i < filteredTokens.length; i++) {
+              if (filteredTokens[i] === "experience") {
+                const skill = filteredTokens[i+1];
+                if (/^[a-zA-Z]+$/.test(skill) && !stopWords.has(skill)) {
+                  skills.push(skill);
+                }
+              }
+            }
+
+            // display skills in list
+            const skillsList = document.getElementById("skillsList");
+            skillsList.innerHTML = "";
+            for (let i = 0; i < skills.length; i++) {
+              const skillItem = document.createElement("li");
+              skillItem.textContent = skills[i];
+              skillsList.appendChild(skillItem);
+            }
+          }, 5000); // wait 5 seconds for all text to be extracted
+        });
+      });
+    </script>
+  </body>
+</html>
